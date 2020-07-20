@@ -1,0 +1,89 @@
+#Titulonegro{
+    color: black;
+    text-align: center;  
+    font-size: 400%;
+    font-family: serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: serif;
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    font-size: 150%;
+}
+
+.formulario{
+    margin: 650px;
+    background: white;
+    margin-top: 250px;
+    padding: 3px;
+    
+}
+
+.input-contenedor{
+    
+    margin-bottom: 15px;
+    border: 1px solid gray;
+    
+}
+.contenedor{
+    width: 100%;
+    padding: 15px;
+    background-color: darkgray;
+}
+#titulo-blanco{
+    color: aliceblue;
+    text-align: center;
+    font-size: 400%;
+    font-family: serif;
+}
+#text-registro{
+    font-family: serif;
+    font-size: 100%;
+}
+
+#navegador{
+    text-align: right;
+}
+
+.barra-usuario{
+    font-size: 100%;
+    display: inline-block;
+    background: firebrick;
+    color: white;
+    margin: 1px;
+    padding: 2px 25px;
+    text-decoration: none;
+    border: 1px solid black;
+    
+}
+#parrafo{
+    color: burlywood;
+    background: firebrick;
+    text-align: center;
+    font-family: serif;
+    font-size: 200%
+}
+#catalogo{
+    color: burlywood;
+    background: firebrick;
+    text-align: center;
+    font-family: serif;
+    font-size: 200%
+    
+}
+.item{
+    color: firebrick;
+    
+}
+
+.producto{
+    color: firebrick;
+}

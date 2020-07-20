@@ -8,7 +8,12 @@ include_once 'Controlador/CProducto.php';
     <head>
         <meta charset="UTF-8">
 
-    </head>    
+    </head> 
+    <style>
+        body{
+            background-image: url( img/money_dollar_bills-75751.jpg)
+        }
+    </style>
     <body> <?php
 if(isset($_SESSION["user"])){
     $total = 0;

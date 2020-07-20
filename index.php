@@ -9,12 +9,18 @@ include_once 'Controlador/CProducto.php';
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Storaged Gaming</title>
-        <meta name="author" content="Luis Aroca">
+        <link href="css/Style.css" rel="stylesheet" type="text/css"/>
+        <title>Storaged Gamin</title>
+        <meta name="author" >
 
     </head>
+    <style>
+        body{
+            background-image: url( img/inicio.jpg )
+        }
+    </style>
     <body>
-        <h1>Storaged Gaming</h1>
+        <h1 id="Titulonegro">Storaged Gaming</h1>
         <?php
         
 
@@ -23,30 +29,32 @@ include_once 'Controlador/CProducto.php';
                 echo ("Bienvenido, ".unserialize($_SESSION["user"])->getNombre());?>
             </div> <br>
             <?php
-                if(unserialize($_SESSION["user"])->getTelefono() == 963015102){?>
+                if(unserialize($_SESSION["user"])->getTelefono() == 123456789){?>
                     <div>
-                        <a href="RegistrarProducto.php">Registrar producto</a>
+                        <a href="admin.php">Registrar producto</a>
                     </div><br><?php
             }
         }
 
         if(!(isset($_SESSION["user"]))){?>
+        <nav id="navegador">
             <div >
-                <a href="login.php">Iniciar Sesión</a>
+                <a href="login.php" class="barra-usuario">Iniciar Sesión</a>
             </div> <br>
             <div>
-                <a href="RegistrarUsuario.php">Registrar Usuario</a>
-            </div> <?php
+                <a href="RegistrarUsuario.php" class="barra-usuario">Registrar Usuario</a>
+            </div> 
+         </nav> <?php
         }else{?> 
             <div>
-                <a href="Controlador/LogOut.php" >Salir de la Sesión</a>
+                <a href="Controlador/LogOut.php" class="barra-usuario">Salir de la Sesión</a>
             </div> <?php 
         }?>
         <br> <br>
         
 
         <div>
-            <label>Su carro de compra:</label>
+            <p id="parrafo">Su carro de compra:</p>
         </div> <br>
         <div><?php
         if(isset(unserialize($_SESSION["catalogo"])->getCarrito()[0])){
@@ -73,7 +81,7 @@ include_once 'Controlador/CProducto.php';
         
         <br>
         <div>
-            <label>Catálogo</label>
+            <p id= "catalogo">Catálogo</p>
         </div> <br>
         
         <div><?php

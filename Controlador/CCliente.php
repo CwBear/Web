@@ -16,7 +16,7 @@ class CCliente {
 
 if(!(isset($_SESSION["instanciaCCliente"]))){
     $ccliente = new CCliente();
-    $admin = new Cliente(963015102, "admin", "admin");
+    $admin = new Cliente(123456789, "admin", "admin");
     $ccliente->agregarCliente($admin);
     $_SESSION["clientes"] = serialize($ccliente);
     $_SESSION["instanciaCCliente"] = "si";
